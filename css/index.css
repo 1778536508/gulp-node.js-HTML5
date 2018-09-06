@@ -225,7 +225,7 @@ html, body, .box {
       top: 12%;
       bottom: 0;
       margin: auto;
-      overflow: auto; }
+      overflow: scroll; }
       .body-back .body-content .conetnt-list .week-list {
         width: 100%; }
         .body-back .body-content .conetnt-list .week-list ul {
