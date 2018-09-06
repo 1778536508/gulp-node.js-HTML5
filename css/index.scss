@@ -1,0 +1,309 @@
+@charset "utf-8";
+// 默认样式
+@import "reset";
+.header {
+  width: 750rem/$size;
+  height: 23rem/$size;
+  text-align: center;
+  color: #fff;
+  @include pos(fixed);
+  left: 0;
+  top: 0;
+  padding-top: 20rem/$size;
+  z-index: 1;
+  font-size: 40rem/$size;
+}
+.content {
+  @include pos(relative);
+  width: 100%;
+  height: 100%;
+}
+.ranking-content {
+  @include pos(fixed);
+  top: 230rem/$size;
+  left: 40rem/$size;
+  right: 40rem/$size;
+  height: 240rem/$size;
+  background: #fff;
+  margin: auto;
+  z-index: 1;
+  border-radius: 10rem/$size;
+  box-shadow:5px 5px 50px rgba(0,0,0,0.1);
+  ul{
+    width: 100%;
+    @include clearfix;
+    li {
+      float: left;
+      width: 33.3%;
+      i {
+        display: block;
+        width: 150rem/$size;
+        height: 200rem/$size;
+        margin: 0 auto;
+        @include pos(relative);
+        margin-top: -80rem/$size;
+        b {
+          display: block;
+          width: 125rem/$size;
+          height: 120rem/$size;
+          border-radius: 100%;
+          background: #fff;
+          z-index: -1;
+          @include pos();
+          top: 12rem/$size;
+          left: 13rem/$size;
+        }
+        em {
+          width: 100%;
+          height: 100%;
+          background: url("../img/img_list_secondavatar@3x.png");
+          background-size: 100% 100%;
+          @include pos();
+          left: 0;
+          top: 0;
+        }
+          img {
+            display: block;
+            width: 50rem/$size;
+            height: 50rem/$size;
+            @include pos();
+            left: 50%;
+            top: 50%;
+            margin-left: -25rem/$size;
+            margin-top: -30rem/$size;
+          }
+        .text-num {
+          width: 100%;
+          text-align: center;
+          @include pos();
+          bottom: 40rem/$size;
+          color: #fff;
+          z-index: 1;
+        }
+      }
+      .text-content {
+        text-align: center;
+        width: 100%;
+        @include clearfix;
+        span {
+          float: left;
+          width: 30rem/$size;
+          height: 30rem/$size;
+          background: url("../img/img_list_thesecond@3x.png");
+          background-size: 100% 100%;
+          text-align: center;
+          line-height: 30rem/$size;
+          font-size: 15rem/$size;
+          margin-left: 50rem/$size;
+          color: #fff;
+          font-size: 15rem/$size;
+        }
+        p{
+          float: left;
+          margin-left: 10rem/$size;
+        }
+      }
+      &:nth-of-type(2) {
+        i {
+          width: 220rem/$size;
+          height: 270rem/$size;
+          margin-top: -130rem/$size;
+          .text-num {
+            bottom: 50rem/$size;
+            font-size: 30rem/$size;
+          }
+          em {
+            background: url("../img/img_list_firstavatar@3x.png");
+            background-size: 100% 100%;
+          }
+          b{
+            width: 150rem/$size;
+            height: 150rem/$size;
+            top: 30rem/$size;
+            left: 35rem/$size;
+          }
+          img {
+            top: 55%;
+          }
+        }
+        .text-content {
+          span {
+            background: url("../img/img_list_thefirst@3x.png");
+            background-size: 100% 100%;
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        .text-content {
+          span {
+            background: url("../img/img_list_thethird@3x.png");
+            background-size: 100% 100%;
+          }
+        }
+        em {
+          background: url("../img/img_list_thirdavatar@3x.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}
+.header-back {
+  width: 750rem/$size;
+  background: url("../img/img_list_backgroundimg@3x.png");
+  background-size: 100% 100%;
+  @include pos();
+  top: 0;
+  bottom: 70%;
+  margin: auto;
+}
+.body-back {
+  width: 750rem/$size;
+  box-sizing: border-box;
+  padding-top: 120rem/$size;
+  @include pos();
+  top: 30%;
+  bottom: 0;
+  margin: auto;
+  .body-content {
+    width: 100%;
+    height: 100%;
+    @include pos(relative);
+    .pics-list {
+      width: 100%;
+      border-bottom: 5px solid rgba(119, 119, 119, 0.2);
+      box-sizing: border-box;
+      padding: 0 40rem/$size;
+      @include clearfix;
+      @include pos();
+      top: 0;
+      bottom: 88%;
+      margin: auto;
+      li {
+        float: left;
+        width: 33.3%;
+        height: 100%;
+        @include pos(relative);
+        &.active {
+          a {
+            color: red;
+          }
+          i{
+            background: red;
+          }
+        }
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          color: #777;
+          line-height: 100rem/$size;
+          font-size: 30rem/$size;
+        }
+        i {
+          display: block;
+          width: 30rem/$size;
+          height: 3rem/$size;
+          @include pos();
+          bottom: -1rem/$size;
+          left: 50%;
+          margin-left: -15rem/$size;
+        }
+      }
+    }
+    .conetnt-list {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20rem/$size 40rem/$size;
+      @include pos();
+      top: 12%;
+      bottom: 0;
+      margin: auto;
+      overflow: auto;
+      .week-list {
+        width: 100%;
+        ul {
+          width: 100%;
+          overflow: hidden;
+          overflow: auto;
+          li {
+            width: 100%;
+            padding: 20rem/$size 0;
+            height: 80rem/$size;
+            line-height: 80rem/$size;
+            border-bottom: 3px solid rgba(119, 119, 119, 0.1);
+            @include clearfix;
+            i {
+              float: left;
+              width: 50rem/$size;
+              height: 55rem/$size;
+              margin-right: 20rem/$size;
+              text-align: center;
+              line-height: 55rem/$size;
+              margin-top: 10rem/$size;
+              color: #777;
+              font-size: 25rem/$size;
+            }
+            em {
+              float: left;
+              width: 80rem/$size;
+              height: 80rem/$size;
+              border-radius: 100%;
+              overflow: hidden;
+              margin-right: 20rem/$size;
+              img {
+                display: block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            p {
+              float: left;
+              width: 330rem/$size;
+              font-size: 30rem/$size;
+              height: 100rem/$size;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            b {
+              margin-left: 20rem/$size;
+              float: right;
+              color: red;
+              width: 150rem/$size;
+              font-size: 30rem/$size;
+              font-weight: 400;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            &:nth-of-type(1) {
+              i {
+                background: url("../img/img_list_thefirst@3x.png");
+                background-size: 100% 100%;
+                color: #fff;
+              }
+            }
+            &:nth-of-type(2) {
+              i {
+                background: url("../img/img_list_thesecond@3x.png");
+                background-size: 100% 100%;
+                color: #fff;
+              }
+            }
+            &:nth-of-type(3) {
+              i {
+                background: url("../img/img_list_thethird@3x.png");
+                background-size: 100% 100%;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
