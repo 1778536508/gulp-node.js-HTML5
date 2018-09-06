@@ -293,5 +293,7 @@ html, body, .box {
               background: url("../img/img_list_thethird@3x.png");
               background-size: 100% 100%;
               color: #fff; }
+            .body-back .body-content .conetnt-list .week-list ul li:last-child {
+              border: none; }
 
 /*# sourceMappingURL=index.css.map */

@@ -299,6 +299,9 @@
                 color: #fff;
               }
             }
+            &:last-child {
+              border: none;
+            }
           }
         }
       }
