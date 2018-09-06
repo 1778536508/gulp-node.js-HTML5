@@ -19,7 +19,7 @@
   height: 100%;
 }
 .ranking-content {
-  @include pos(fixed);
+  @include pos();
   top: 230rem/$size;
   left: 40rem/$size;
   right: 40rem/$size;
@@ -171,7 +171,7 @@
     @include pos(relative);
     .pics-list {
       width: 100%;
-      border-bottom: 5px solid rgba(119, 119, 119, 0.2);
+      border-bottom: 5rem/$size solid rgba(119, 119, 119, 0.2);
       box-sizing: border-box;
       padding: 0 40rem/$size;
       @include clearfix;
@@ -206,9 +206,10 @@
           width: 30rem/$size;
           height: 3rem/$size;
           @include pos();
-          bottom: -1rem/$size;
+          bottom: -2rem/$size;
           left: 50%;
           margin-left: -15rem/$size;
+          border-radius: 100%;
         }
       }
     }
@@ -232,7 +233,7 @@
             padding: 20rem/$size 0;
             height: 80rem/$size;
             line-height: 80rem/$size;
-            border-bottom: 3px solid rgba(119, 119, 119, 0.1);
+            border-bottom: 3rem/$size solid rgba(119, 119, 119, 0.1);
             @include clearfix;
             i {
               float: left;
